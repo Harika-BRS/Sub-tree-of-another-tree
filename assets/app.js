@@ -72,6 +72,19 @@ document.getElementById("submit").addEventListener("click", function() {
   }
 });
 
+document.getElementById("rootInput").addEventListener("keyup", function(event) {
+  if (event.key === "Enter") {
+    document.getElementById("submit").click();
+  }
+});
+
+document.getElementById("subrootinput").addEventListener("keyup", function(event) {
+  if (event.key === "Enter") {
+    document.getElementById("submit").click();
+  }
+});
+
+
 // Add this script to clear the input field on page load
 document.addEventListener('DOMContentLoaded', function() {
   var rootInput = document.getElementById('rootInput');
